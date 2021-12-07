@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2954076 */
+  src: url('iconfont.woff2?t=1638340320419') format('woff2'),
+       url('iconfont.woff?t=1638340320419') format('woff'),
+       url('iconfont.ttf?t=1638340320419') format('truetype'),
+       url('iconfont.svg?t=1638340320419#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-alipay-RectangleCopy:before {
+  content: "\e6eb";
+}
+
+.icon-alipay-phone:before {
+  content: "\e6a0";
+}
+
+.icon-alipay-icon-test:before {
+  content: "\e635";
+}
+
+.icon-alipay-icon-test1:before {
+  content: "\e638";
+}
+
+.icon-alipay-voiceprint:before {
+  content: "\e6e4";
+}
+
+.icon-alipay-record:before {
+  content: "\e8ad";
+}
+
+.icon-alipay-xiaoxi:before {
+  content: "\e8bd";
+}
+
+.icon-alipay-history:before {
+  content: "\e752";
+}
+
+.icon-alipay-gift:before {
+  content: "\e753";
+}
+
+.icon-alipay-service:before {
+  content: "\e764";
+}
+
+.icon-alipay-right-circle:before {
+  content: "\e765";
+}
+
+.icon-alipay-success:before {
+  content: "\e767";
+}
+
+.icon-alipay-tool-hardware:before {
+  content: "\e76e";
+}
+
+.icon-alipay-shangchuan:before {
+  content: "\e7c4";
+}
+
+.icon-alipay-add:before {
+  content: "\e664";
+}
+
+.icon-alipay-add-circle:before {
+  content: "\e665";
+}
+
+.icon-alipay-arrow-up-circle:before {
+  content: "\e666";
+}
+
+.icon-alipay-arrow-right-circle:before {
+  content: "\e667";
+}
+
+.icon-alipay-ashbin:before {
+  content: "\e668";
+}
+
+.icon-alipay-arrow-left-circle:before {
+  content: "\e669";
+}
+
+.icon-alipay-customer-service:before {
+  content: "\e66a";
+}
+
+.icon-alipay-direction-down-circle:before {
+  content: "\e66b";
+}
+
+.icon-alipay-direction-up:before {
+  content: "\e66c";
+}
+
+.icon-alipay-map:before {
+  content: "\e677";
+}
+
+.icon-alipay-mobile-phone:before {
+  content: "\e678";
+}
+
+.icon-alipay-setting:before {
+  content: "\e67d";
+}
+
+.icon-alipay-telephone-out:before {
+  content: "\e680";
+}
+
+.icon-alipay-telephone:before {
+  content: "\e681";
+}
+
+.icon-alipay-top:before {
+  content: "\e682";
+}
+
+.icon-alipay-visible:before {
+  content: "\e633";
+}
+
+.icon-alipay-invisible:before {
+  content: "\e634";
+}
+
+.icon-alipay-cart-empty:before {
+  content: "\e63b";
+}
+
+.icon-alipay-cart:before {
+  content: "\e63c";
+}
+
+.icon-alipay-search:before {
+  content: "\e63d";
+}
+
+.icon-alipay-lock:before {
+  content: "\e644";
+}
+
+.icon-alipay-unlock:before {
+  content: "\e645";
+}
+
+.icon-alipay-user:before {
+  content: "\e64d";
+}
+
+.icon-alipay-arrow-up:before {
+  content: "\e658";
+}
+
+.icon-alipay-arrow-left:before {
+  content: "\e659";
+}
+
+.icon-alipay-arrow-down:before {
+  content: "\e65a";
+}
+
+.icon-alipay-arrow-right:before {
+  content: "\e65b";
+}
+
