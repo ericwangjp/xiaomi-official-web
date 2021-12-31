@@ -238,7 +238,6 @@ export default {
     //}
     //}
 
-
     .item {
       width: 25px;
       height: 40px;
@@ -250,7 +249,6 @@ export default {
           color: #757575;
         }
       }
-
 
       .text {
         display: none;

@@ -62,7 +62,6 @@ export default {
     SlideBar,
     TopHeader,
     TopBar
-
   }
 }
 </script>
