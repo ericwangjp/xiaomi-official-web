@@ -3,11 +3,7 @@
     <div class="box-header clearfix">
       <h2 class="title">智能穿戴</h2>
       <div class="more">
-        <ul>
-          <li v-for="(item,index) in tabs" :key="item" @mouseenter="enter(index)" :class="{active:curIndex === index}">
-            {{ item }}
-          </li>
-        </ul>
+        <more-tabs :tab-data="tabs"/>
       </div>
     </div>
     <div class="box-body clearfix">
@@ -45,10 +41,11 @@
 <script>
 import ScanMore from "@/components/ScanMore";
 import GoodsItem from "@/components/GoodsItem";
+import MoreTabs from "@/components/MoreTabs";
 
 export default {
   name: "SmartWear",
-  components: {GoodsItem, ScanMore},
+  components: {MoreTabs, GoodsItem, ScanMore},
   data() {
     return {
       tabs: ["热门", "穿戴"],
@@ -107,14 +104,10 @@ export default {
       childInfo: {
         targetUrl: "https://www.mi.com/search?keyword=%E6%89%8B%E8%A1%A8%E6%89%8B%E7%8E%AF",
       },
-      curIndex: 0
+
     }
   },
-  methods: {
-    enter(index) {
-      this.curIndex = index
-    }
-  }
+
 }
 </script>
 
@@ -130,36 +123,13 @@ export default {
     .title {
       margin: 0;
       font-size: 22px;
-      font-weight: 200;
+      font-weight: 400;
       line-height: 58px;
       color: #333333;
     }
 
     .more {
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      ul {
-        margin: 0;
-        padding: 16px 0 0;
-        font-size: 16px;
-
-        li {
-          margin: 0 0 0 30px;
-          padding: 2px 0;
-          display: inline-block;
-          cursor: pointer;
-          transition: border .3s;
-          color: #424242;
-          border-bottom: 2px solid rgba(0, 0, 0, 0);
-        }
-      }
-
-      .active {
-        color: #ff6700;
-        border-bottom: 2px solid #ff6700;
-      }
+      //position: relative;
     }
   }
 

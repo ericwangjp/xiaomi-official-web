@@ -13,10 +13,17 @@
             <phone-header/>
             <mobile-plate/>
             <smart-wear/>
+            <home-electric/>
+            <home-video/>
           </div>
         </div>
       </el-main>
-      <el-footer height="60px">Footer</el-footer>
+      <div class="footer clearfix">
+        <foot-header/>
+        <footer-links/>
+        <footer-site-info/>
+      </div>
+      <home-tool-bar/>
     </el-container>
   </div>
 </template>
@@ -32,10 +39,22 @@ import HomeBanner from "@/components/HomeBanner";
 import PhoneHeader from "@/components/PhoneHeader";
 import MobilePlate from "@/components/MobilePlate";
 import SmartWear from "@/components/SmartWear";
+import HomeElectric from "@/components/HomeElectric";
+import HomeVideo from "@/components/HomeVideo";
+import FootHeader from "@/components/FootHeader";
+import FooterLinks from "@/components/FooterLinks";
+import FooterSiteInfo from "@/components/FooterSiteInfo";
+import HomeToolBar from "@/components/HomeToolBar";
 
 export default {
   name: 'Home',
   components: {
+    HomeToolBar,
+    FooterSiteInfo,
+    FooterLinks,
+    FootHeader,
+    HomeVideo,
+    HomeElectric,
     SmartWear,
     MobilePlate,
     PhoneHeader,
@@ -72,9 +91,9 @@ export default {
       }
     }
 
-    .el-footer {
-      padding: 0;
-      margin: 0;
+    .footer {
+      width: 100%;
+      margin: 0 auto;
     }
   }
 }

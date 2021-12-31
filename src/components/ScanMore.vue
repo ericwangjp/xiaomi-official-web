@@ -19,7 +19,7 @@ export default {
     targetUrl: String,
     title: {
       type: String,
-      required: true,
+      // required: true,
       default() {
         return "浏览更多"
       }

@@ -1,14 +1,6 @@
 <template>
   <div class="mobile-container">
-    <div class="box-header">
-      <h2>手机</h2>
-      <div class="more">
-        <a href="https://www.mi.com/p/1915.html">
-          查看更多
-          <i class="iconfont icon-alipay-arrow-right"></i>
-        </a>
-      </div>
-    </div>
+    <title-more v-bind="titleData"/>
     <div class="box-body clearfix">
       <div class="row">
         <div class="span4">
@@ -36,10 +28,11 @@
 
 <script>
 import GoodsItem from "@/components/GoodsItem";
+import TitleMore from "@/components/TitleMore";
 
 export default {
   name: "MobilePlate",
-  components: {GoodsItem},
+  components: {TitleMore, GoodsItem},
   data() {
     return {
       goodsList: [
@@ -49,58 +42,63 @@ export default {
           goodsTitle: 'Redmi Note 11 Pro系列',
           goodsDesc: 'Redmi Note 11 Pro系列',
           goodsPrice: '1799',
-          type:1
+          type: 1
         }, {
           targetUrl: "https://www.mi.com/redminote11",
           imageUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=400&h=400&f=webp&q=90',
           goodsTitle: 'Redmi Note 11 5G',
           goodsDesc: '5000mAh大电量',
           goodsPrice: '1199',
-          type:1
+          type: 1
         }, {
           targetUrl: "https://www.mi.com/redminote11",
           imageUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=400&h=400&f=webp&q=90',
           goodsTitle: 'Redmi Note 11 5G',
           goodsDesc: '5000mAh大电量',
           goodsPrice: '1199',
-          type:1
+          type: 1
         }, {
           targetUrl: "https://www.mi.com/redminote11",
           imageUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=400&h=400&f=webp&q=90',
           goodsTitle: 'Redmi Note 11 5G',
           goodsDesc: '5000mAh大电量',
           goodsPrice: '1199',
-          type:1
+          type: 1
         }, {
           targetUrl: "https://www.mi.com/redminote11",
           imageUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=400&h=400&f=webp&q=90',
           goodsTitle: 'Redmi Note 11 5G',
           goodsDesc: '5000mAh大电量',
           goodsPrice: '1199',
-          type:1
+          type: 1
         }, {
           targetUrl: "https://www.mi.com/redminote11",
           imageUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=400&h=400&f=webp&q=90',
           goodsTitle: 'Redmi Note 11 5G',
           goodsDesc: '5000mAh大电量',
           goodsPrice: '1199',
-          type:1
+          oldPrice: '1699',
+          type: 2
         }, {
           targetUrl: "https://www.mi.com/redminote11",
           imageUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=400&h=400&f=webp&q=90',
           goodsTitle: 'Redmi Note 11 5G',
           goodsDesc: '5000mAh大电量',
           goodsPrice: '1199',
-          type:1
+          type: 1
         }, {
           targetUrl: "https://www.mi.com/redminote11",
           imageUrl: 'https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/50da95e9e4496dcac8704da2deb94f6e.jpg?thumb=1&w=400&h=400&f=webp&q=90',
           goodsTitle: 'Redmi Note 11 5G',
           goodsDesc: '5000mAh大电量',
           goodsPrice: '1199',
-          type:1
+          type: 1
         }
-      ]
+      ],
+      titleData: {
+        title: "手机",
+        moreText: "查看更多"
+      }
     }
   }
 }
@@ -109,56 +107,6 @@ export default {
 <style scoped lang="less">
 .mobile-container {
   margin-bottom: 8px;
-
-  .box-header {
-    position: relative;
-    height: 58px;
-    -webkit-font-smoothing: antialiased;
-
-    h2 {
-      margin: 0;
-      font-size: 22px;
-      font-weight: 200;
-      line-height: 58px;
-      color: #333333;
-    }
-
-    .more {
-      position: absolute;
-      top: 0;
-      right: 0;
-
-      a {
-        font-size: 16px;
-        line-height: 58px;
-        color: #424242;
-        transition: all .4s;
-
-        i {
-          background: #b0b0b0;
-          width: 12px;
-          height: 12px;
-          padding: 4px;
-          margin-left: 8px;
-          border-radius: 16px;
-          font-size: 12px;
-          font-weight: 600;
-          line-height: 12px;
-          vertical-align: 1px;
-          transition: all .4s;
-          color: white;
-        }
-
-        &:hover {
-          color: #ff6700;
-
-          i {
-            background-color: #ff6700;
-          }
-        }
-      }
-    }
-  }
 
   .box-body {
     .row {

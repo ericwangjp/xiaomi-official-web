@@ -47,7 +47,10 @@ export default {
   data() {
     return {
       bannerList: [
-        "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/78d0483ed36158659fcf65a19a9b249a.jpeg?w=2452&h=920",
+        "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/bcb0a2a49a51e35eba8c1c0c0c7c1d70.jpg?w=2452&h=920",
+          "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/73927a6ef08dacc1b828b8fa8b1727c3.jpeg?thumb=1&w=2452&h=920&f=webp&q=90",
+        "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/15c05b32cf948b594477dfc3eb69fb69.jpg?w=2452&h=920",
+        "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a532e33470d046b3f044d5ea49fc5e9e.png?thumb=1&w=2452&h=920&f=webp&q=90",
         "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fc0f553382bb5143e667b284dfcf02db.jpg?thumb=1&w=2452&h=920&f=webp&q=90",
         "https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/918820682e4a490221cfd92b24c14b86.jpg?thumb=1&w=2452&h=920&f=webp&q=90"
       ],
@@ -253,8 +256,8 @@ export default {
             transition: box-shadow .2s linear;
 
             &:hover {
-              -webkit-box-shadow:0 15px 30px rgba(0, 0, 0, .1);
-              box-shadow:0 15px 30px rgba(0, 0, 0, .1);
+              -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+              box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
               z-index: 2;
             }
 
